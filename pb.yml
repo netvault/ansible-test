@@ -5,3 +5,5 @@
       ansible.builtin.copy:
         src: /home/gorlock/folder/worked.txt
         dest: /home/pi/Downloads/worked.txt
+      vars:
+       ansible_ssh_common_args: '-o StrictHostKeyChecking=no'
