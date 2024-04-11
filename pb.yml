@@ -6,9 +6,8 @@
   tasks:
 
     - name: Debug source path
-    ansible.builtin.debug:
-      msg: "Source path is {{ src }}"
-
+      ansible.builtin.debug:
+        msg: "Source path is {{ src }}"
       
     - name: Copy file from host to client
       ansible.builtin.copy:
