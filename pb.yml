@@ -1,3 +1,4 @@
+---
 tasks:
   - name: Debug source path
     ansible.builtin.debug:
