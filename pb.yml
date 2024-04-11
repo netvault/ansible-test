@@ -1,9 +1,9 @@
-- name: Copy file from host machine to client hosts
-  hosts: pi
-  vars:
-    ansible_host_key_checking: false
-  tasks:
-    - name: Copy file from host to client
-      ansible.builtin.copy:
-        src: /home/gorlock/folder/worked.txt
-        dest: /home/pi/Downloads/worked.txt
+tasks:
+  - name: Debug source path
+    ansible.builtin.debug:
+      msg: "Source path is {{ src }}"
+
+  - name: Copy file from host to client
+    ansible.builtin.copy:
+      src: /home/gorlock/folder/worked.txt
+      dest: /home/pi/Downloads/worked.txt
