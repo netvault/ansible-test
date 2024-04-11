@@ -8,3 +8,4 @@
       ansible.builtin.copy:
         src: /home/gorlock/folder/worked.txt
         dest: /home/pi/Downloads/worked.txt
+        remote_src: true
