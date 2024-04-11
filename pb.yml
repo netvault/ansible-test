@@ -1,5 +1,5 @@
 - name: Copy file from host machine to client hosts
-  hosts: clients
+  hosts: pi
   tasks:
     - name: Copy file from host to client
       ansible.builtin.copy:
