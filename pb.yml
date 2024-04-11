@@ -4,4 +4,4 @@
     - name: Copy file from host to client
       ansible.builtin.copy:
         src: /home/gorlock/folder/worked.txt
-        dest: /home/{{ ansible_user }}/Downloads/worked.txt
+        dest: /home/pi/Downloads/worked.txt
